@@ -38,7 +38,7 @@ public class MarkovOne extends AbstractMarkovModel{
             }
             index = myRandom.nextInt(follows.size());
             sb.append(follows.get(index));
-            key = follows.get(index);            
+            key = follows.get(index);
         }
         
         return sb.toString();

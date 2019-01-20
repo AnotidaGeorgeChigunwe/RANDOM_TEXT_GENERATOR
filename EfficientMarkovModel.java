@@ -48,7 +48,7 @@ public class EfficientMarkovModel implements IMarkovModel{
         System.out.println("Number of keys : " + map.size() +"\n");
         /*for (String k : map.keySet()) {
             System.out.println(k);
-        }
+        }*/
         int value=0;
         for (ArrayList<String> k : map.values()) {  
             if (k.size()>value) {
@@ -56,11 +56,11 @@ public class EfficientMarkovModel implements IMarkovModel{
             }
         }
         System.out.println("The largest value : " + value +"\n");
-        /*for (String k : map.keySet()) {
+        for (String k : map.keySet()) {
             if (map.get(k).size()==value) {
                 System.out.println(k);
             }
-        }*/
+        }
         return map;        
     }
     
